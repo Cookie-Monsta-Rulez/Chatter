@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\glad\glad.c" />
+    <ClCompile Include="include\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="include\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="include\imgui\imgui.cpp" />
+    <ClCompile Include="include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="include\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="include\imgui\misc\cpp\imgui_stdlib.cpp" />
+    <ClCompile Include="main.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)include;$(ProjectDir)include\imgui;$(ProjectDir)include\glad;$(ProjectDir)include\GLFW;$(ProjectDir)include\openssl;$(ProjectDir)include\openssl\include</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="glad\gl.h" />
+    <ClInclude Include="glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="imgui\examples\example_allegro5\imconfig_allegro5.h" />
+    <ClInclude Include="imgui\examples\libs\emscripten\emscripten_mainloop_stub.h" />
+    <ClInclude Include="imgui\examples\libs\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="imgui\examples\libs\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="imgui\examples\libs\usynergy\uSynergy.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="imgui\misc\cpp\imgui_stdlib.h" />
+    <ClInclude Include="imgui\misc\freetype\imgui_freetype.h" />
+    <ClInclude Include="imgui\misc\single_file\imgui_single_file.h" />
+    <ClInclude Include="imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="include\KHR\khrplatform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glfw\docs\html\build_8md.html" />
+    <None Include="glfw\docs\html\build_guide.html" />
+    <None Include="glfw\docs\html\compat_8md.html" />
+    <None Include="glfw\docs\html\compat_guide.html" />
+    <None Include="glfw\docs\html\compile_8md.html" />
+    <None Include="glfw\docs\html\compile_guide.html" />
+    <None Include="glfw\docs\html\context_8md.html" />
+    <None Include="glfw\docs\html\context_guide.html" />
+    <None Include="glfw\docs\html\deprecated.html" />
+    <None Include="glfw\docs\html\dir_13577e2d8b9423099662de029791bd7d.html" />
+    <None Include="glfw\docs\html\dir_7f92719a7fe62e5b064f87d7a3c220b1.html" />
+    <None Include="glfw\docs\html\dir_a788ef6c2b1e5b367804e0b6ccfd6f11.html" />
+    <None Include="glfw\docs\html\dir_b11153cd0f4fd04a7564cc166f482635.html" />
+    <None Include="glfw\docs\html\files.html" />
+    <None Include="glfw\docs\html\glfw3native_8h.html" />
+    <None Include="glfw\docs\html\glfw3native_8h_source.html" />
+    <None Include="glfw\docs\html\glfw3_8h.html" />
+    <None Include="glfw\docs\html\glfw3_8h_source.html" />
+    <None Include="glfw\docs\html\group__buttons.html" />
+    <None Include="glfw\docs\html\group__context.html" />
+    <None Include="glfw\docs\html\group__errors.html" />
+    <None Include="glfw\docs\html\group__gamepad__axes.html" />
+    <None Include="glfw\docs\html\group__gamepad__buttons.html" />
+    <None Include="glfw\docs\html\group__hat__state.html" />
+    <None Include="glfw\docs\html\group__init.html" />
+    <None Include="glfw\docs\html\group__input.html" />
+    <None Include="glfw\docs\html\group__joysticks.html" />
+    <None Include="glfw\docs\html\group__keys.html" />
+    <None Include="glfw\docs\html\group__mods.html" />
+    <None Include="glfw\docs\html\group__monitor.html" />
+    <None Include="glfw\docs\html\group__native.html" />
+    <None Include="glfw\docs\html\group__shapes.html" />
+    <None Include="glfw\docs\html\group__vulkan.html" />
+    <None Include="glfw\docs\html\group__window.html" />
+    <None Include="glfw\docs\html\index.html" />
+    <None Include="glfw\docs\html\input_8md.html" />
+    <None Include="glfw\docs\html\input_guide.html" />
+    <None Include="glfw\docs\html\internals_guide.html" />
+    <None Include="glfw\docs\html\internal_8md.html" />
+    <None Include="glfw\docs\html\intro_8md.html" />
+    <None Include="glfw\docs\html\intro_guide.html" />
+    <None Include="glfw\docs\html\main_8md.html" />
+    <None Include="glfw\docs\html\monitor_8md.html" />
+    <None Include="glfw\docs\html\monitor_guide.html" />
+    <None Include="glfw\docs\html\moving_8md.html" />
+    <None Include="glfw\docs\html\moving_guide.html" />
+    <None Include="glfw\docs\html\news.html" />
+    <None Include="glfw\docs\html\news_8md.html" />
+    <None Include="glfw\docs\html\pages.html" />
+    <None Include="glfw\docs\html\quick_8md.html" />
+    <None Include="glfw\docs\html\quick_guide.html" />
+    <None Include="glfw\docs\html\struct_g_l_f_wallocator.html" />
+    <None Include="glfw\docs\html\struct_g_l_f_wgamepadstate.html" />
+    <None Include="glfw\docs\html\struct_g_l_f_wgammaramp.html" />
+    <None Include="glfw\docs\html\struct_g_l_f_wimage.html" />
+    <None Include="glfw\docs\html\struct_g_l_f_wvidmode.html" />
+    <None Include="glfw\docs\html\topics.html" />
+    <None Include="glfw\docs\html\vulkan_8md.html" />
+    <None Include="glfw\docs\html\vulkan_guide.html" />
+    <None Include="glfw\docs\html\window_8md.html" />
+    <None Include="glfw\docs\html\window_guide.html" />
+    <None Include="imgui\examples\example_glfw_wgpu\web\index.html" />
+    <None Include="imgui\examples\libs\emscripten\shell_minimal.html" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e3af17dc-f142-463b-b264-003b2fb14ff5}</ProjectGuid>
+    <RootNamespace>ChatterClientv2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)include\imgui;$(ProjectDir)include\glad;$(ProjectDir)include\GLFW;$(ProjectDir)include\openssl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PerUserRedirection>true</PerUserRedirection>
+      <AdditionalLibraryDirectories>C:\Program Files\OpenSSL-Win64\lib\VC\x64\MD;C:\Users\seanc\Downloads\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\lib-vc2022</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libssl.lib;libcrypto.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
